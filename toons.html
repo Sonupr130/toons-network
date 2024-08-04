@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            /* justify-content: space-between; */
+            position: relative;
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: aquamarine; */
+        }
+
+        #nav #logo h1 {
+            font-size: 1.5rem;
+            font-family: "Gilroy";
+
+        }
+
+        #left {
+            width: 40%;
+            height: 100%;
+            position: relative;
+        }
+
+        #left #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #text h1 {
+            font-size: 80px;
+            /* color: #FF7124; */
+        }
+
+
+        #nav i {
+            display: none;
+        }
+
+        #text p {
+            opacity: .7;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+
+        #text a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 12px;
+            opacity: .6;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+
+
+        #right {
+            width: 60%;
+            height: 100%;
+            background-color: rgb(69, 32, 255);
+        }
+
+        #right #rtop {
+            width: 100%;
+            height: 50%;
+            background-color: yellow;
+        }
+
+        #right #rbottom {
+            width: 100%;
+            height: 50%;
+            background-image: url(https://i.pinimg.com/originals/50/ef/0a/50ef0ac5773e0181ff27577cb811c9ae.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #rtop {
+            display: flex;
+        }
+
+        #rtop #rtopl{
+            width: 50%;
+            height: 100%;
+            background-image: url(https://i.pinimg.com/originals/51/d1/19/51d1195ca367cdbd14e57f6323961817.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: flex-start;
+        }
+
+        #rtopl h1 {
+            margin-left: 4vw;
+            font-size: 6vw;
+            color: #fff;
+            line-height: 1;
+        }
+
+        #rtop #rtopr{
+            width: 50%;
+            height: 100%;
+            background-image: url(https://i.pinimg.com/564x/3f/fc/c1/3ffcc11c6f80557957dc56d554cf6c21.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media(max-width: 500px) {
+            #main {
+                flex-direction: column;
+            }
+
+            #left {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            #right {
+                width: 100%;
+            }
+
+            #right #rtopl h1 {
+                font-size: 10vw;
+            }
+
+
+
+            #right #rtopl {
+                width: 100%;
+            }
+
+            #right #rtopr {
+                width: 100%;
+            }
+
+            #nav {
+                height: 80px;
+                padding: 0 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #nav #logo h1 {
+                font-size: 1.5rem;
+            }
+
+            #nav i {
+                display: initial;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="logo">
+                <h1>ToonsNetwork.</h1>
+            </div>
+            <i class="ri-menu-3-line"></i>
+        </div>
+        <div id="left">
+            <div id="text">
+                <h1>Toons</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat mollitia enim? Provident eveniet dignissimos molestiae tempora blanditiis assumenda voluptate.</p>
+                <a href="#">Know More</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rtop">
+                <div id="rtopl">
+                    <!-- <h1>Oran</h1>
+                    <h1>ges</h1> -->
+                </div>
+                <div id="rtopr"></div>
+            </div>
+            <div id="rbottom"></div>
+        </div>
+
+    </div>
+    <footer>
+        &copy; Designed by <a href="https://www.instagram.com/developersonupr/">developersonupr</a> 🔥
+    </footer>
+</body>
+</html>
